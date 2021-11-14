@@ -60,6 +60,11 @@ const AddProducts = () => {
                                     placeholder="Shipping Price"
                                     className="p-2 m-2 w-100 rounded border-0"
                                 />
+                                <input 
+                                    type="number" {...register("stock", { required: true })}
+                                    placeholder="Stock"
+                                    className="p-2 m-2 w-100 rounded border-0"
+                                />
                             </div>
                             <br />
                             <input

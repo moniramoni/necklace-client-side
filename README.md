@@ -1,6 +1,6 @@
-# Website Name -- necklace.com
+# Name -- necklace.com
 
-# Live Site Link -- [necklace](https://necklace-com.web.app/)
+# Live Site -- [necklace](https://necklace-com.web.app/)
 
 ### About necklace
 - MISSION: To beautify the world with our meticulously crafted fine jewelry. To inspire moments of happiness and celebrations. To enlighten and enrich women’s lives
@@ -12,7 +12,7 @@
 ### website features
 - Single Page Application(single-page applications don't reload the entire page)
 
-### - Fast and responsive
+- Fast and responsive
 
 - secure authentication systems using google sign in.
 
@@ -31,5 +31,5 @@
 - Heroku Hosting ( Server Side )
 
 
-### Deployment
-### 
+<!-- ### Deployment
+###  -->
