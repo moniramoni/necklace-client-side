@@ -94,7 +94,10 @@ const ManageOrder = () => {
                                             <div className="text-dark text-sm-center text-center text-lg-start pt-2">
                                                 <h3 className="fs-5 fw-bold ">{manageOrder?.singleProduct?.name}</h3>
                                                 <h6 className="fs-6 fw-bold">Price: <span className="color-orange">{manageOrder?.singleProduct?.price}</span></h6>
-                                                <img className="user-img " src={manageOrder?.featuredImage} alt="" />
+                                                
+                                                {manageOrder?.featuredImage? <img className="user-img " src={manageOrder?.featuredImage} alt="" /> :
+                                                <img className="user-photo-default" src= "https://i.ibb.co/3sHw2zQ/user-img.png "alt="" />}
+
                                                 <span className="fs-6 fw-bold px-2">{manageOrder?.name}</span>
                                                 <span className="fw-thin"> {manageOrder?.phone}</span>                                           
                                                 <br />

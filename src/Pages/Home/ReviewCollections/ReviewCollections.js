@@ -24,7 +24,10 @@ const ReviewCollections = () => {
                         <div className="col-md-6 col-lg-4 col-12 text-start" key= {reviewCollection._id}>
                             <div className="mb-4">
                                 <div className="text-center">
-                                    <img className="profile-img border border-2 shadow" src={reviewCollection.featuredImage} alt="" />
+
+                                   {reviewCollection?.featuredImage? <img className="profile-img border border-2 shadow" src={reviewCollection.featuredImage} alt="" /> :
+                                    <img className="profile-img border border-2 shadow" src= "https://i.ibb.co/3sHw2zQ/user-img.png "alt="" />}
+
                                     <h4 className="pt-2 fs-6 px-3 color-orange">{reviewCollection.name}</h4>
                                     <hr className="w-25 m-3 text-center m-auto" />
                                     <p className="pt-2 px-3">{reviewCollection.comments}</p>
