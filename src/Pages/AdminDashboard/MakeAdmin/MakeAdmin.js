@@ -35,7 +35,7 @@ const MakeAdmin = () => {
                         type="email"
                         {...register("email", { required: true })}
                     />
-                    <br />   
+                    <br /> 
                     <input
                         className="btn bg-color-orange text-light w-100 mt-3"
                         type="submit"

@@ -73,7 +73,7 @@ const Header = () => {
                                 activeStyle={activeStyle} to="/productPage">Products
                             </NavLink>
 
-                            {admin && 
+                            { admin && 
 
                                 <NavLink className="menu-text"
                                     activeStyle={activeStyle} to="/adminDashBoard">Admin DashBoard
@@ -81,7 +81,7 @@ const Header = () => {
 
                             } 
 
-                            {user?.email &&
+                            {user?.email && !admin &&
                             
                                 <NavLink className="menu-text"
                                 activeStyle={activeStyle} to="/userDashBoard">User DashBoard

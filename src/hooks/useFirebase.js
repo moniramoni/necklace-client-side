@@ -17,7 +17,7 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider();
 
 
-    const registerUser = (email, password, name, history, location) => {
+    const registerUser = (email, password, name, history) => {
         setIsLoading(true);
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -26,8 +26,8 @@ const useFirebase = () => {
                 setUser(newUser);
                 // save user to the database
                     saveUser(email , name, 'POST');
-                    const destination = location?.state?.from || '/';
-                    history.replace(destination);
+                    // const destination = location?.state?.from || '/';
+                    // history.replace(destination);
                 // send name to firebase after creation
                 updateProfile(auth.currentUser, {
                     displayName: name

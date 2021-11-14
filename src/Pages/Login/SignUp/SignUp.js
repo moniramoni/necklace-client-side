@@ -1,7 +1,7 @@
 import './SignUp.css'
 import React, { useState } from 'react';
 import { Alert, Button, Col, Form, Row, Spinner } from 'react-bootstrap';
-import { Link, useLocation, useHistory } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 
@@ -29,7 +29,7 @@ const SignUp = () => {
            alert("Password did not match")
            return
        }
-       registerUser(loginData.email, loginData.password, loginData.name, location, history)
+       registerUser(loginData.email, loginData.password, loginData.name, history)
 
         e.preventDefault()
         
