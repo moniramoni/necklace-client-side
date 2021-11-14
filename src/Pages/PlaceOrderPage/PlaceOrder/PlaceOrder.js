@@ -59,8 +59,8 @@ const PlaceOrder = () => {
                         {errors.email && <span className="text-danger">This field is required</span>}
                         <br />
                         <input
-                                {...register("featuredImage", { required: true })}
-                                placeholder="Featured Image"
+                                {...register("userImg")}
+                                placeholder="User Image"
                                 value={user?.photoURL}
                                 className="p-2 m-2 w-100 rounded border-0"
                         />

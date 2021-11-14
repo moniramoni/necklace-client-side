@@ -43,7 +43,7 @@ const Reviews = () => {
                             />
                             <br />
                             <input
-                                {...register("featuredImage", { required: true })}
+                                {...register("featuredImage")}
                                 placeholder="Featured Image"
                                 value={user?.photoURL}
                                 className="p-2 m-2 w-100 rounded border-0"
