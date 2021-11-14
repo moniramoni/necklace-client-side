@@ -43,6 +43,13 @@ const Reviews = () => {
                             />
                             <br />
                             <input
+                                {...register("featuredImage", { required: true })}
+                                placeholder="Featured Image"
+                                value={user?.photoURL}
+                                className="p-2 m-2 w-100 rounded border-0"
+                            />
+                            <br />
+                            <input
                                 {...register("email", { required: true })}
                                 type="email"
                                 name="email"

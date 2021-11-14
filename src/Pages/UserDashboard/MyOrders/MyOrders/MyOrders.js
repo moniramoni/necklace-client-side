@@ -33,6 +33,8 @@ const MyOrders = () => {
         </div>
         {/* ------------------------ */}
 
+        <h1 className="text-start text-dark ms-4 ps-5 pb-4">My Orders</h1>
+
             <div className="m-auto mb-5">
                 <div className="row container  m-auto">
                     {myOrders?.map((order) => <MyOrder order={order} key={order._id}></MyOrder>)}
