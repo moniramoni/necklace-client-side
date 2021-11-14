@@ -1,5 +1,4 @@
 .footer-container{
-    /* background-image: url("https://i.ibb.co/ZY4Jr2q/footer-top-bg.png"); */
     background-color: #212121;
 }
 
@@ -7,11 +6,10 @@
     text-decoration: none;
     list-style-type: none;
     margin-right: 20px;
-    /* color: rgba(255, 255, 255, 0.781); */
     font-size: 15px;
 }
 .footer-menu li:hover{
-    color: white;
+    color: #dd4026;
 }
 .footer-social li{
     list-style-type: none;
@@ -19,5 +17,5 @@
     color: #dd4026;
 }
 .color{
-    color: #dd4026;
+    color: white;
 }

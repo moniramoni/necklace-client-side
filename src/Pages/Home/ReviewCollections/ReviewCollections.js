@@ -16,8 +16,8 @@ const ReviewCollections = () => {
 
     return (
         <>
-            <h1 className="my-5"> Review Collections</h1>
-            <div className="m-auto mb-5">
+            <h1 className="my-5 py-3"> Review Collections</h1>
+            <div className="m-auto mb-5 pb-5">
                 <div className="row container  m-auto">
                     {reviewCollections?.map((reviewCollection) => (
                         <div className="col-md-6 col-lg-4 col-12 text-start" key= {reviewCollection._id}>

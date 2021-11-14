@@ -17,7 +17,7 @@ const FeaturedProducts = () => {
     return (
         <div>
              <div className="text-center mt-5">
-                <h1 className="my-5"> Featured Products</h1>
+                <h1 className="my-5 pt-5 pb-3"> Featured Products</h1>
             </div>
             <div className="m-auto mb-5">
                 <div className="row container  m-auto">

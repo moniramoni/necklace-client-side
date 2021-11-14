@@ -11,7 +11,7 @@ const Footer = () => {
             <Row className="container m-auto my-0 pt-5 pb-1 d-md-flex">
                 <Col className="text-center justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center" xs={12} md={12} lg={12}>
                     <img
-                        src="https://i.ibb.co/rvfKJnC/logo-2.png"
+                        src="https://i.ibb.co/w6Cn1ww/necklace-logo-removebg-preview.png"
                         width="100"
                         className="d-inline-block align-top footer-logo pb-4"
                         alt="React Bootstrap logo"
@@ -39,7 +39,7 @@ const Footer = () => {
                         </ul>
                     </Col>
                     <Col className=" d-flex justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center" xs={12} md={6} lg={6}>
-                        <p className="color ">© 2021 Minor Hotel. All Rights Reserved</p>
+                        <p className="color ">© 2021 CopyRight. All rights reserved By necklace.com</p>
                     </Col>
                 </Row>
             </Row>

@@ -40,18 +40,18 @@ const Header = () => {
             </div>
             <Navbar bg="light" variant="light" collapseOnSelect expand="lg" className="fluid header-navbar ">
                 <Container>
-                <Link to="/home">
+                <NavLink to="/home" activeStyle={{textDecoration:'none'}}>
                     <Navbar.Brand href="/home" className="d-flex">
-                            <Link to="/home"><img
-                                src="https://i.ibb.co/rvfKJnC/logo-2.png"
+                            <NavLink to="/home" ><img
+                                src="https://i.ibb.co/w6Cn1ww/necklace-logo-removebg-preview.png"
                                 width="150"
                                 height="50"
                                 className="w-100"
                                 alt="React Bootstrap logo"
-                            /> </Link>{' '}
+                            /> </NavLink>{' '}
                             <h2 className="w-100 text-decoration-none text-dark p-1">necklace</h2>
                         </Navbar.Brand>
-                        </Link>
+                        </NavLink>
                         <Navbar.Toggle />
                         <Navbar.Collapse className="justify-content-end">
                                                 
