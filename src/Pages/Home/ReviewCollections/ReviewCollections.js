@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import useAuth from '../../../hooks/useAuth';
+// import useAuth from '../../../hooks/useAuth';
 
 const ReviewCollections = () => {
-    const {user} = useAuth()
+    // const {user} = useAuth()
     const [reviewCollections, setReviewCollection] = useState([])
 
     useEffect(() => {
