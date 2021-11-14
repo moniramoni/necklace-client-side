@@ -1,0 +1,12 @@
+.bg-color-gray{
+    background-color: #212121;
+}
+.bg-color-orange{
+    background-color: #dd4026;
+}
+.color-orange{
+    color: #dd4026;
+}
+.bg-shadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

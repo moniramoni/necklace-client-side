@@ -1,0 +1,68 @@
+/* top part start */
+.top-bar{ 
+    background-color: #212121;;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.footer-icon li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 20px;
+    color: #dd4026;
+    font-size: 18px;
+}
+.footer-icon li:hover{
+    color: white;
+}
+
+
+/* .............top part end........... */
+
+.lg{
+    color: #3e3e3e;
+}
+
+.logo-container{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.menu-text{
+    color: #212529;
+    outline: none;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 20px;
+}
+.menu-text:hover{
+    color: #212529;
+}
+.logout-btn{
+    background-color: #dd4026;
+    padding: 0px 20px;
+    font-weight: 500;
+
+}
+.profile-img{
+    width:15%;
+    border-radius: 50%;
+    margin-right: 0px;
+}
+.profile-name{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.profile-name:hover{
+    color: white;
+}
+
+.logo{
+    text-decoration: none;
+}
+.navbar-light .navbar-brand {
+    color: rgb(0 0 0 / 0%);
+}
+.navbar-light .navbar-brand:hover {
+    color: rgb(0 0 0 / 0%);
+}

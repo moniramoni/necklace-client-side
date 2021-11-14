@@ -1,0 +1,12 @@
+.shop-container{
+    background-image: url("https://i.ibb.co/cwsY2RF/slider-1.jpg");
+    width: 100%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+}
+.banner-shop{
+    background-color: #212121e0;
+}
