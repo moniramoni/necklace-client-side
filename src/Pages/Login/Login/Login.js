@@ -58,7 +58,7 @@ const Login = () => {
                                 {user?.email && <Alert variant="success" className="mt-4">
                                     <Alert.Heading className="">Login Successful</Alert.Heading>
                                 </Alert>}
-                                {!user || authError && <Alert variant="danger">
+                                { authError && <Alert variant="danger">
                                 <Alert.Heading>{authError}</Alert.Heading>
                                 </Alert>}
                                {!isLoading && <form onSubmit={handleLoginSubmit}>

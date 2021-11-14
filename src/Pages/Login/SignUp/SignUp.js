@@ -29,7 +29,7 @@ const SignUp = () => {
            alert("Password did not match")
            return
        }
-       registerUser(loginData.email, loginData.password, loginData.name, history)
+       registerUser(loginData.email, loginData.password, loginData.name, location, history)
 
         e.preventDefault()
         
