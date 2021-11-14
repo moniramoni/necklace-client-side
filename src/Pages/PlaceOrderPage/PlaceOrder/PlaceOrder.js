@@ -44,43 +44,50 @@ const PlaceOrder = () => {
             <SingleProduct></SingleProduct>
             <div className="p-5">
                 <div className="">
-                    <form className=" border shipping-form d-block w-75 m-auto p-5" onSubmit={handleSubmit(onSubmit)}>
-                    <h3 className="fs-4 fw-bold text-center pb-4">Place Information </h3>
+                    <form className="bg-color-gray rounded border shipping-form d-block w-75 m-auto p-5" onSubmit={handleSubmit(onSubmit)}>
+                    <h3 className="fs-4 fw-bold text-light text-center pb-4">Place Information </h3>
                         <input 
-                            className="w-75 my-2"
+                            className="p-2 m-2 w-100 rounded border-0"
                             defaultValue={user?.displayName} {...register("name", { required: true })} 
                         />
                         {errors.displayName && <span className="text-danger">This field is required</span>}
                         <br />
                         <input
-                            className="w-75 my-2"
+                            className="p-2 m-2 w-100 rounded border-0"
                             defaultValue={user?.email} {...register("email", { required: true })} 
                         />
                         {errors.email && <span className="text-danger">This field is required</span>}
                         <br />
+                        <input
+                                {...register("featuredImage", { required: true })}
+                                placeholder="Featured Image"
+                                value={user?.photoURL}
+                                className="p-2 m-2 w-100 rounded border-0"
+                        />
+                        <br />
                         <input 
-                            className="w-75 my-2"
+                            className="p-2 m-2 w-100 rounded border-0"
                             placeholder="Address" defaultValue="" {...register("address", { required: true })} 
                         />
                         <br />
                         <input
-                            className="w-75 my-2"
+                            className="p-2 m-2 w-100 rounded border-0"
                             placeholder="City" defaultValue="" {...register("city")} 
                         />
                         {errors.email && <span className="text-danger">This field is required</span>}
                         <br />
                         <input 
-                            className="w-75 my-2"
+                            className="p-2 m-2 w-100 rounded border-0"
                             placeholder="phone number" defaultValue="" {...register("phone")} 
                         />
                         <br />
                         <input
                             // placeholder="booked date"
                             type="date"
-                            className="p-2 w-75 " {...register("date")}
+                            className="p-2 m-2 w-100 rounded border-0" {...register("date")}
                         />
                         <br />
-                        <input className="px-5 my-4 w-50 bg-dark text-light border-0 py-2 rounded" type="submit" />
+                        <input className="btn bg-color-orange text-light fw-bold w-50 my-3" type="submit" />
                     </form>
                 </div>
             </div>

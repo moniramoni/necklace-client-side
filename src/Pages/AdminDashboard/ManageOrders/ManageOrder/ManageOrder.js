@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import useAuth from '../../../../hooks/useAuth';
+// import useAuth from '../../../../hooks/useAuth';
 import './ManageOrder.css'
 
 const ManageOrder = () => {
     const [loading, setLoading] = useState(true)
     const [manageOrders, setManageOrders] = useState([])
-    const {user} = useAuth()
+    // const {user} = useAuth()
 
     console.log(manageOrders)
+
+
 
     useEffect(() => {
         fetch("https://guarded-shelf-19111.herokuapp.com/manageOrders")
@@ -19,6 +21,7 @@ const ManageOrder = () => {
         })
     }, [loading])
 
+    
 
     // delete button 
     const handleDeleteManageOrders = (id) => {
@@ -91,8 +94,8 @@ const ManageOrder = () => {
                                             <div className="text-dark text-sm-center text-center text-lg-start pt-2">
                                                 <h3 className="fs-5 fw-bold ">{manageOrder?.singleProduct?.name}</h3>
                                                 <h6 className="fs-6 fw-bold">Price: <span className="color-orange">{manageOrder?.singleProduct?.price}</span></h6>
-                                                <img className="user-img " src={user?.photoURL} alt="" />
-                                                <span className="fs-6 fw-bold px-2">{user?.displayName}</span>
+                                                <img className="user-img " src={manageOrder?.featuredImage} alt="" />
+                                                <span className="fs-6 fw-bold px-2">{manageOrder?.name}</span>
                                                 <span className="fw-thin"> {manageOrder?.phone}</span>                                           
                                                 <br />
                                                 <span className="me-4">D: {manageOrder?.date}</span>

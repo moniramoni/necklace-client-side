@@ -26,8 +26,12 @@ const MyOrders = () => {
         {/* ------------------ */}
         <div className="shop-container">
             <div className="banner-shop py-5">
-                <img className="user-photo" src={user?.photoURL} alt="" />
-                <h1 className="color-orange pt-3 fs-5 ">{user?.displayName}</h1>
+                {user?.photoURL? <img className="user-photo" src={user.photoURL} alt="" />:
+                <img className="user-photo-default" src= "https://i.ibb.co/3sHw2zQ/user-img.png "alt="" />}
+
+                {user?.displayName? <h1 className="color-orange pt-3 fs-5 ">{user?.displayName}</h1>:
+                <h1 className="color-orange pt-3 fs-5 ">User</h1>}
+
                 <h6 className="text-center text-light fw-light pt-1"><span className="color fs-6 fw-light">Email: </span> {user?.email} </h6>
             </div>
         </div>
