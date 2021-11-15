@@ -28,8 +28,11 @@
 
 - Firebase Hosting ( Client Side )
 
-- Heroku Hos![Necklace](https://user-images.githubusercontent.com/86655543/141739566-1913a3bd-2257-4fe9-968b-c723de6de149.png)
-ting ( Server Side )
+- Heroku Hosting ( Server Side )
+
+
+ ![Necklace](https://user-images.githubusercontent.com/86655543/141739566-1913a3bd-2257-4fe9-968b-c723de6de149.png)
+
 
 
 <!-- ### Deployment
